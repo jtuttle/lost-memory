@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerRaycast : MonoBehaviour
 {
-    public float distanceToSee;
+    public float DistanceToSee;
 
     private StoryObject _target;
 
@@ -17,7 +17,7 @@ public class PlayerRaycast : MonoBehaviour
     {
         Debug.DrawRay(
             this.transform.position,
-            this.transform.forward * distanceToSee,
+            this.transform.forward * DistanceToSee,
             Color.magenta
         );
 
@@ -27,7 +27,7 @@ public class PlayerRaycast : MonoBehaviour
             this.transform.position,
             this.transform.forward,
             out hitInfo,
-            distanceToSee
+            DistanceToSee
         );
 
         // remove outline from previous target

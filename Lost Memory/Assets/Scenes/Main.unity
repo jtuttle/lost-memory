@@ -241,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23268743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1100001, y: 0, z: 9.27}
+  m_LocalPosition: {x: 9.58, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2059506661}
@@ -369,7 +369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles: []
+  SubtitleStartSeconds: []
 --- !u!1 &84973938
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +398,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84973938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.46, y: 0, z: 9.27}
+  m_LocalPosition: {x: 11.93, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 617400261}
@@ -525,7 +526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles: []
+  SubtitleStartSeconds: []
 --- !u!1 &169351706
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +555,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 169351706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0799999, y: 0, z: 9.27}
+  m_LocalPosition: {x: 7.55, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1101599008}
@@ -681,7 +683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles: []
+  SubtitleStartSeconds: []
 --- !u!1001 &175581086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -853,7 +856,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267772382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.72, y: 0, z: 9.27}
+  m_LocalPosition: {x: 14.190001, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1652572856}
@@ -981,7 +984,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles: []
+  SubtitleStartSeconds: []
 --- !u!1 &399302678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,8 +1082,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cae18216e6ab402f80ddc2cc739d82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerRaycast: {fileID: 529616923}
-  subtitle: {fileID: 399302680}
+  PlayerRaycast: {fileID: 529616923}
+--- !u!114 &432658716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432658714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 612a6ef4868a04d139c5cf37256ce57f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Subtitle: {fileID: 399302680}
+  StoryCompleteEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &469235284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5043815123470985128, guid: 389a5a20128ce49868cb93b024b22c57,
@@ -1152,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 645889bb41ac0460f81c9927e03161f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToSee: 2
+  DistanceToSee: 2
 --- !u!114 &529616924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,7 +1583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796791031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.52, y: 0, z: 9.27}
+  m_LocalPosition: {x: -0.049999714, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1604581759}
@@ -1679,7 +1698,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles:
+  - 
+  - Wh... What's that?!
+  - Oh... oh god...
+  - That's... That's... That's me!
+  - I'm... I'm gonna... I'm gonna throw up.
+  - 
+  - Okay... Okay...
+  - What's going on?!
+  - What's happening?!
+  - 
+  - ...am I dead?
+  SubtitleStartSeconds:
+  - 0
+  - 3.5
+  - 4.5
+  - 6
+  - 9
+  - 11
+  - 14
+  - 16
+  - 17.5
+  - 19
+  - 21
 --- !u!65 &796791035
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1870,7 +1912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118588475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.56, y: 0, z: 9.27}
+  m_LocalPosition: {x: 1.9100003, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1085082678}
@@ -1998,7 +2040,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles:
+  - 
+  - Stop, please don't!
+  SubtitleStartSeconds:
+  - 0
+  - 1.8
 --- !u!1001 &1278439199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2523,7 +2570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789595349}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.67, y: 0, z: 9.27}
+  m_LocalPosition: {x: 3.8000002, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1906450486}
@@ -2651,7 +2698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles: []
+  SubtitleStartSeconds: []
 --- !u!1001 &1906450485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2754,7 +2802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967883268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.81999993, y: 0, z: 9.27}
+  m_LocalPosition: {x: 5.6500006, y: 0, z: 3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 175581087}
@@ -2882,7 +2930,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53f6c88ee93948d8b3b0458906a3dbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Text: boop
+  Subtitles: []
+  SubtitleStartSeconds: []
 --- !u!4 &2041181987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5043815123470985128, guid: 389a5a20128ce49868cb93b024b22c57,
