@@ -1,20 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerClick : MonoBehaviour
 {
-    public PlayerRaycast playerRaycast;
-    public UnityEngine.UI.Text subtitle;
+    public PlayerRaycast PlayerRaycast;
+    
+    private StoryPlayer _storyPlayer;
+
+    void Start()
+    {
+        _storyPlayer = gameObject.GetComponent<StoryPlayer>();
+    }
 
     void Update()
     {
-        gameObject.transform.position += new Vector3(1, 0, 0);
-
         if(Input.GetMouseButtonDown(0))
         {
-            StoryObject target = playerRaycast.GetTarget();
+            StoryObject target = PlayerRaycast.GetTarget();
             
             if(target)
             {
@@ -27,23 +30,15 @@ public class PlayerClick : MonoBehaviour
     {
         setPlayerMovement(false);
 
-        subtitle.GetComponent<Text>().text = target.Text;
-
-        AudioSource sound = target.GetComponent<AudioSource>();
-        sound.Play();
-        StartCoroutine(WaitForSound(sound));
-    }
-
-    private IEnumerator WaitForSound(AudioSource sound)
-    {
-        yield return new WaitUntil(() => sound.isPlaying == false);
+        _storyPlayer.StoryCompleteEvent.AddListener(OnStoryComplete);
         
-        OnSoundComplete();
+        _storyPlayer.PlayStory(target);
     }
 
-    private void OnSoundComplete()
+    private void OnStoryComplete()
     {
-        subtitle.GetComponent<Text>().text = "";
+        _storyPlayer.StoryCompleteEvent.RemoveListener(OnStoryComplete);
+
         setPlayerMovement(true);
     }
 
