@@ -10,6 +10,8 @@ public class PlayerClick : MonoBehaviour
 
     void Update()
     {
+        gameObject.transform.position += new Vector3(1, 0, 0);
+
         if(Input.GetMouseButtonDown(0))
         {
             StoryObject target = playerRaycast.GetTarget();
