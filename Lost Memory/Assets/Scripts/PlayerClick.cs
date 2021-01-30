@@ -16,10 +16,26 @@ public class PlayerClick : MonoBehaviour
             
             if(target)
             {
-
-
                 subtitle.GetComponent<Text>().text = "Oh, it's a " + target.name;
+
+                target.Sound.Play();
+
+                target.MarkDone();
+
+                setPlayerMovement(false);
+
+                setPlayerMovement(true);
             }
         }
-    } 
+    }
+
+
+    private void setPlayerMovement(bool value)
+    {
+        gameObject.GetComponent<FirstPersonMovement>().enabled = value;
+        gameObject.GetComponent<Jump>().enabled = value;
+        gameObject.GetComponent<Crouch>().enabled = value;
+
+        gameObject.GetComponentInChildren<FirstPersonLook>().enabled = value;
+    }
 }
