@@ -6,7 +6,6 @@ public class PlayerRaycast : MonoBehaviour
 {
     public float distanceToSee;
 
-    private Vector3 yOffset = new Vector3(0, 1, 0);
     private GameObject target;
 
     void Start()
@@ -17,14 +16,19 @@ public class PlayerRaycast : MonoBehaviour
     void Update()
     {
         Debug.DrawRay(
-            this.transform.position + yOffset,
+            this.transform.position,
             this.transform.forward * distanceToSee,
             Color.magenta
         );
 
         RaycastHit hitInfo;
 
-        bool hit = Physics.Raycast(this.transform.position + yOffset, this.transform.forward, out hitInfo, distanceToSee);
+        bool hit = Physics.Raycast(
+            this.transform.position,
+            this.transform.forward,
+            out hitInfo,
+            distanceToSee
+        );
 
         // remove outline from previous target
         if(target && (!hit || (target != hitInfo.collider.gameObject)))
