@@ -16,25 +16,32 @@ public class PlayerClick : MonoBehaviour
             
             if(target)
             {
-                target.MarkDone();
-
-                setPlayerMovement(false);
-
-                subtitle.GetComponent<Text>().text = target.Text;
-
-                target.Sound.Play();
-
-                StartCoroutine(WaitForSound(target.Sound));
+                OnTargetClick(target);
             }
         }
     }
 
-    public IEnumerator WaitForSound(AudioSource sound)
+    private void OnTargetClick(StoryObject target)
+    {
+        setPlayerMovement(false);
+
+        subtitle.GetComponent<Text>().text = target.Text;
+
+        AudioSource sound = target.GetComponent<AudioSource>();
+        sound.Play();
+        StartCoroutine(WaitForSound(sound));
+    }
+
+    private IEnumerator WaitForSound(AudioSource sound)
     {
         yield return new WaitUntil(() => sound.isPlaying == false);
         
-        subtitle.GetComponent<Text>().text = "";
+        OnSoundComplete();
+    }
 
+    private void OnSoundComplete()
+    {
+        subtitle.GetComponent<Text>().text = "";
         setPlayerMovement(true);
     }
 
