@@ -6,7 +6,7 @@ public class PlayerRaycast : MonoBehaviour
 {
     public float distanceToSee;
 
-    private GameObject Target;
+    private StoryObject _target;
 
     void Start()
     {
@@ -31,28 +31,20 @@ public class PlayerRaycast : MonoBehaviour
         );
 
         // remove outline from previous target
-        if(Target && (!hit || (Target != hitInfo.collider.gameObject)))
+        if(_target && (!hit || (_target != hitInfo.collider.gameObject)))
         {
-            setOutline(Target, false);
-            Target = null;
+            _target.SetOutline(false);
+            _target = null;
         }
 
         if(hit)
         {
-            Target = hitInfo.collider.gameObject;
-            setOutline(Target, true);
+            _target = hitInfo.collider.gameObject.GetComponent<StoryObject>();
+            _target.SetOutline(true);
         }
     }
 
-    public GameObject GetTarget() {
-        return Target;
-    }
-
-    private void setOutline(GameObject go, bool value) {
-        cakeslice.Outline outline = go.GetComponent<cakeslice.Outline>();
-
-        if(outline) {
-            outline.eraseRenderer = !value;
-        }
+    public StoryObject GetTarget() {
+        return _target;
     }
 }
