@@ -6,7 +6,7 @@ public class PlayerRaycast : MonoBehaviour
 {
     public float distanceToSee;
 
-    private GameObject target;
+    private GameObject Target;
 
     void Start()
     {
@@ -31,17 +31,21 @@ public class PlayerRaycast : MonoBehaviour
         );
 
         // remove outline from previous target
-        if(target && (!hit || (target != hitInfo.collider.gameObject)))
+        if(Target && (!hit || (Target != hitInfo.collider.gameObject)))
         {
-            setOutline(target, false);
-            target = null;
+            setOutline(Target, false);
+            Target = null;
         }
 
         if(hit)
         {
-            target = hitInfo.collider.gameObject;
-            setOutline(target, true);
+            Target = hitInfo.collider.gameObject;
+            setOutline(Target, true);
         }
+    }
+
+    public GameObject GetTarget() {
+        return Target;
     }
 
     private void setOutline(GameObject go, bool value) {
