@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 478886806}
   - component: {fileID: 478886805}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: PostProcessingGO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
