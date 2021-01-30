@@ -12,10 +12,12 @@ public class PlayerClick : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            GameObject target = playerRaycast.GetTarget();
+            StoryObject target = playerRaycast.GetTarget();
             
             if(target)
             {
+
+
                 subtitle.GetComponent<Text>().text = "Oh, it's a " + target.name;
             }
         }
