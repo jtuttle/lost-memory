@@ -1699,7 +1699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Subtitles:
-  - 
   - Wh... What's that?!
   - Oh... oh god...
   - That's... That's... That's me!
@@ -1712,16 +1711,15 @@ MonoBehaviour:
   - ...am I dead?
   SubtitleStartSeconds:
   - 0
+  - 2
   - 3.5
-  - 4.5
-  - 6
-  - 9
-  - 11
+  - 6.5
+  - 8.5
+  - 11.5
   - 14
+  - 15
   - 16
-  - 17.5
-  - 19
-  - 21
+  - 18.5
 --- !u!65 &796791035
 BoxCollider:
   m_ObjectHideFlags: 0
