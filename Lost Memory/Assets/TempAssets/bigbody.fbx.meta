@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 71f86f3732cb4446d87ea189a7a4264f
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -4977663065762667185
+    second: Dining table|Dining tableAction
   externalObjects: {}
   materials:
     materialImportMode: 1
