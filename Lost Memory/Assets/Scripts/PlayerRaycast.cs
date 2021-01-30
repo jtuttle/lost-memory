@@ -39,8 +39,13 @@ public class PlayerRaycast : MonoBehaviour
 
         if(hit)
         {
-            _target = hitInfo.collider.gameObject.GetComponent<StoryObject>();
-            _target.SetOutline(true);
+            StoryObject target = hitInfo.collider.gameObject.GetComponent<StoryObject>();
+
+            if(!target.IsDone())
+            {
+                _target = target;
+                _target.SetOutline(true);
+            }
         }
     }
 
