@@ -5,6 +5,7 @@ using UnityEngine;
 public class StoryObject : MonoBehaviour
 {
     public AudioSource Sound;
+    public string Text;
 
     private cakeslice.Outline _outline;
     private bool _done;

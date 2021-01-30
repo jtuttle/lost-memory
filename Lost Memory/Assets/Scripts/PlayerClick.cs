@@ -16,19 +16,27 @@ public class PlayerClick : MonoBehaviour
             
             if(target)
             {
-                subtitle.GetComponent<Text>().text = "Oh, it's a " + target.name;
-
-                target.Sound.Play();
-
                 target.MarkDone();
 
                 setPlayerMovement(false);
 
-                setPlayerMovement(true);
+                subtitle.GetComponent<Text>().text = target.Text;
+
+                target.Sound.Play();
+
+                StartCoroutine(WaitForSound(target.Sound));
             }
         }
     }
 
+    public IEnumerator WaitForSound(AudioSource sound)
+    {
+        yield return new WaitUntil(() => sound.isPlaying == false);
+        
+        subtitle.GetComponent<Text>().text = "";
+
+        setPlayerMovement(true);
+    }
 
     private void setPlayerMovement(bool value)
     {

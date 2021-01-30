@@ -680,6 +680,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3706017335221743168, guid: 560b5bdf077ec42c9af2a0c358c43421,
         type: 3}
+      propertyPath: Text
+      value: Sorry Love
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706017335221743168, guid: 560b5bdf077ec42c9af2a0c358c43421,
+        type: 3}
       propertyPath: Sound
       value: 
       objectReference: {fileID: 1694531468}
@@ -1058,7 +1063,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40aa1c9dfec4946839086d916202e53f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8a956d12c9b5b4264b09c6b5fbc57a33, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
