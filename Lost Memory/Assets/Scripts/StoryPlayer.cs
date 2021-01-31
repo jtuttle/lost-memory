@@ -12,10 +12,12 @@ public class StoryPlayer : MonoBehaviour
 
     private StoryObject _target;
     private int _index;
+    private bool _playing;
 
     void Start()
     {
         _index = 0;
+        _playing = false;
     }
 
     void Update()
@@ -35,10 +37,16 @@ public class StoryPlayer : MonoBehaviour
     {
         _target = target;
         _index = 0;
+        _playing = true;
 
         AudioSource sound = target.GetComponent<AudioSource>();
         sound.Play();
         StartCoroutine(WaitForSound(sound));
+    }
+
+    public bool IsPlaying()
+    {
+        return _playing;
     }
 
     private IEnumerator WaitForSound(AudioSource sound)
@@ -54,6 +62,7 @@ public class StoryPlayer : MonoBehaviour
         
         _target = null;
         _index = 0;
+        _playing = false;
 
         StoryCompleteEvent.Invoke();
     }
