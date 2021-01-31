@@ -45,6 +45,7 @@ public class PlayerClick : MonoBehaviour
     private void setPlayerMovement(bool value)
     {
         gameObject.GetComponent<FirstPersonMovement>().enabled = value;
+        gameObject.GetComponent<Jump>().enabled = value;
         gameObject.GetComponentInChildren<FirstPersonLook>().enabled = value;
     }
 }
