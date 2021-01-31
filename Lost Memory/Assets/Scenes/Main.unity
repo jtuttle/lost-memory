@@ -489,6 +489,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &432658718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432658714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59654b39e4954790ae3b4fbca76d29c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &432658723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f,
@@ -1240,6 +1252,11 @@ PrefabInstance:
         type: 3}
       propertyPath: eraseRenderer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7567624315633153999, guid: 88e6058779873473c8df072da128d949,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734288007697166300, guid: 88e6058779873473c8df072da128d949,
         type: 3}
@@ -2054,6 +2071,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1409835393}
     m_Modifications:
+    - target: {fileID: 2904477836086188042, guid: f87d2ac5c2db346ef935ba2c765e128b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2904477836086188086, guid: f87d2ac5c2db346ef935ba2c765e128b,
         type: 3}
       propertyPath: m_Name

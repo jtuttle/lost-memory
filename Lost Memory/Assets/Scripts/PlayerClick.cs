@@ -7,10 +7,12 @@ public class PlayerClick : MonoBehaviour
     public PlayerRaycast PlayerRaycast;
     
     private StoryPlayer _storyPlayer;
+    private StoryTracker _storyTracker;
 
     void Start()
     {
         _storyPlayer = gameObject.GetComponent<StoryPlayer>();
+        _storyTracker = gameObject.GetComponent<StoryTracker>();
     }
 
     void Update()
@@ -33,6 +35,8 @@ public class PlayerClick : MonoBehaviour
         _storyPlayer.StoryCompleteEvent.AddListener(OnStoryComplete);
         
         _storyPlayer.PlayStory(target);
+
+        _storyTracker.TrackStoryObject(target);
     }
 
     private void OnStoryComplete()
