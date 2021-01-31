@@ -35,13 +35,13 @@ public class PlayerClick : MonoBehaviour
         _storyPlayer.StoryCompleteEvent.AddListener(OnStoryComplete);
         
         _storyPlayer.PlayStory(target);
-
-        _storyTracker.TrackStoryObject(target);
     }
 
-    private void OnStoryComplete()
+    private void OnStoryComplete(StoryObject target)
     {
         _storyPlayer.StoryCompleteEvent.RemoveListener(OnStoryComplete);
+
+        _storyTracker.TrackStoryObject(target);
 
         setPlayerMovement(true);
     }

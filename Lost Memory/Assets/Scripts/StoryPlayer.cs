@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
+public class StoryObjectEvent : UnityEvent<StoryObject> {}
+
 public class StoryPlayer : MonoBehaviour
 {
     public UnityEngine.UI.Text Subtitle;
 
-    public UnityEvent StoryCompleteEvent = new UnityEvent();
+    public StoryObjectEvent StoryCompleteEvent = new StoryObjectEvent();
 
     private StoryObject _target;
     private int _index;
@@ -60,10 +62,12 @@ public class StoryPlayer : MonoBehaviour
     {
         Subtitle.GetComponent<Text>().text = "";
         
+        StoryObject target = _target;
+
         _target = null;
         _index = 0;
         _playing = false;
 
-        StoryCompleteEvent.Invoke();
+        StoryCompleteEvent.Invoke(target);
     }
 }
