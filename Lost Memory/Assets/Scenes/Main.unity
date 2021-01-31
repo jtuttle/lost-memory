@@ -1086,6 +1086,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
+    - target: {fileID: 1611019898300738342, guid: 88e6058779873473c8df072da128d949,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.06
+      objectReference: {fileID: 0}
     - target: {fileID: 1732206147920044903, guid: 88e6058779873473c8df072da128d949,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1306,6 +1311,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.485
       objectReference: {fileID: 0}
+    - target: {fileID: 7845002863562616209, guid: 88e6058779873473c8df072da128d949,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.68
+      objectReference: {fileID: 0}
     - target: {fileID: 7845002864649938707, guid: 88e6058779873473c8df072da128d949,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1344,7 +1354,7 @@ PrefabInstance:
     - target: {fileID: 2277268765444421576, guid: 83afd6768e9ee4ac687195af39468466,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.484
+      value: 2.066
       objectReference: {fileID: 0}
     - target: {fileID: 2277268765444421576, guid: 83afd6768e9ee4ac687195af39468466,
         type: 3}
@@ -1386,12 +1396,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2277268765444421621, guid: 83afd6768e9ee4ac687195af39468466,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2277268765444421623, guid: 83afd6768e9ee4ac687195af39468466,
         type: 3}
       propertyPath: m_Name
       value: Mirror Center
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2277268765444421621, guid: 83afd6768e9ee4ac687195af39468466, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 83afd6768e9ee4ac687195af39468466, type: 3}
 --- !u!4 &1399425345 stripped
 Transform:
@@ -2120,7 +2136,7 @@ PrefabInstance:
     - target: {fileID: 4668987121400731936, guid: 011243d3062fb4ca1bcffb7da250659a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.429
+      value: 2.01
       objectReference: {fileID: 0}
     - target: {fileID: 4668987121400731936, guid: 011243d3062fb4ca1bcffb7da250659a,
         type: 3}
