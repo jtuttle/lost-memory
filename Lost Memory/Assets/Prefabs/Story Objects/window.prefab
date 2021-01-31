@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 8213316244202742876}
   - component: {fileID: 18938878499551525}
   - component: {fileID: 601850471696090263}
+  - component: {fileID: 865339783560018057}
   m_Layer: 0
   m_Name: pCube2
   m_TagString: Untagged
@@ -316,6 +317,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &865339783560018057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202090218266315478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &1835926971823256293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,6 +1053,7 @@ GameObject:
   - component: {fileID: 603901681789897854}
   - component: {fileID: 9122245907459783077}
   - component: {fileID: 5331576407351110437}
+  - component: {fileID: 8286430096325695149}
   m_Layer: 0
   m_Name: pCube3
   m_TagString: Untagged
@@ -1106,6 +1122,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8286430096325695149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5754313039468899780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &6103127262845622851
 GameObject:
   m_ObjectHideFlags: 0
@@ -1274,7 +1304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6788954410838990943}
   m_Layer: 0
-  m_Name: Window
+  m_Name: window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,7 +1318,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6160052092658612965}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.87, y: 2.19, z: 7.82}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 35, y: 35, z: 35}
   m_Children:
   - {fileID: 8213316244202742876}
@@ -1324,6 +1354,7 @@ GameObject:
   - component: {fileID: 5637004317471530380}
   - component: {fileID: 4493059663425723359}
   - component: {fileID: 3839743966512523203}
+  - component: {fileID: 8496880663270640181}
   m_Layer: 0
   m_Name: pSphere3
   m_TagString: Untagged
@@ -1392,6 +1423,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8496880663270640181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6776359326576783079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
 --- !u!1 &7551394891093933831
 GameObject:
   m_ObjectHideFlags: 0
