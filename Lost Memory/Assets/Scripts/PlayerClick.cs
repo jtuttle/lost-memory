@@ -15,7 +15,7 @@ public class PlayerClick : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && !_storyPlayer.IsPlaying())
         {
             StoryObject target = PlayerRaycast.GetTarget();
             
