@@ -11,11 +11,6 @@ public class StoryTracker : MonoBehaviour
         _progress = new List<string>();
     }
 
-    void Update()
-    {
-        Debug.Log(_progress.Count);
-    }
-
     public void TrackStoryObject(StoryObject storyObject)
     {
         string name = storyObject.gameObject.name;
