@@ -7,22 +7,22 @@ public class StoryObject : MonoBehaviour
     public List<string> Subtitles;
     public List<float> SubtitleStartSeconds;
     
-    private cakeslice.Outline _outline;
+    private cakeslice.Outline[] _outlines;
 
     void Start()
     {
-        // assumes first child is object model w/ Outline script
-        _outline = gameObject.transform.GetChild(0).GetComponent<cakeslice.Outline>();
-        _outline.enabled = false;
-    }
+        _outlines = GetComponentsInChildren<cakeslice.Outline>();
+        SetOutline(false);
 
-    void Update()
-    {
-        
+        // assumes first child is object model w/ Outline script
+        //_outline = gameObject.transform.GetChild(0).GetComponent<cakeslice.Outline>();
+        //_outline.enabled = false;
     }
 
     public void SetOutline(bool value)
     {
-        _outline.enabled = value;
+        foreach(cakeslice.Outline outline in _outlines) {
+            outline.enabled = value;
+        }
     }
 }
