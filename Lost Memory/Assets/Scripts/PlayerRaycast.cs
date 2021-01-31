@@ -8,11 +8,6 @@ public class PlayerRaycast : MonoBehaviour
 
     private StoryObject _target;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         Debug.DrawRay(
