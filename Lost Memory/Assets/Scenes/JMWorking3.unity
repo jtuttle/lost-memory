@@ -1188,44 +1188,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 538980488}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &602367033 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4045678942978524299, guid: 86c0bcf691ccb4469be687af77766abc,
-    type: 3}
-  m_PrefabInstance: {fileID: 7174560459413001345}
-  m_PrefabAsset: {fileID: 0}
---- !u!328 &602367034
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602367033}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d44c6b1136cdc4df08054e83430e385e, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 3
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources: []
-  m_DirectAudioVolumes: []
-  m_Url: 
-  m_EnabledAudioTracks: 
-  m_DirectAudioMutes: 
-  m_ControlledAudioTrackCount: 0
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 1
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
 --- !u!1001 &617400260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2913,17 +2875,17 @@ PrefabInstance:
     - target: {fileID: 2277268765444421576, guid: 83afd6768e9ee4ac687195af39468466,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.878
+      value: 18.21
       objectReference: {fileID: 0}
     - target: {fileID: 2277268765444421576, guid: 83afd6768e9ee4ac687195af39468466,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.767
+      value: 5.11
       objectReference: {fileID: 0}
     - target: {fileID: 2277268765444421576, guid: 83afd6768e9ee4ac687195af39468466,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.796
+      value: 9.51
       objectReference: {fileID: 0}
     - target: {fileID: 2277268765444421576, guid: 83afd6768e9ee4ac687195af39468466,
         type: 3}
@@ -3243,11 +3205,80 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffb290ad8e62343cea2df152106ea56b, type: 3}
+--- !u!1001 &4919079476328630361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1409835393}
+    m_Modifications:
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.188253
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.180189
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15.103138
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -6.123234e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2301374118644734035, guid: 7585ae5ab6c9440f9b13c17175c63778,
+        type: 3}
+      propertyPath: m_Name
+      value: Bathroom Mirror
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7585ae5ab6c9440f9b13c17175c63778, type: 3}
 --- !u!4 &6016773302612836492 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
+  m_CorrespondingSourceObject: {fileID: 1674155748167338197, guid: 7585ae5ab6c9440f9b13c17175c63778,
     type: 3}
-  m_PrefabInstance: {fileID: 7174560459413001345}
+  m_PrefabInstance: {fileID: 4919079476328630361}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6466482334790364678
 PrefabInstance:
@@ -3387,75 +3418,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0d291146b6304f5690ab7a101da8bf8, type: 3}
---- !u!1001 &7174560459413001345
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1409835393}
-    m_Modifications:
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.188253
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.180189
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 15.103138
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 6.123234e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 6.123234e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -6.123234e-17
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3526028002929071117, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4045678942978524299, guid: 86c0bcf691ccb4469be687af77766abc,
-        type: 3}
-      propertyPath: m_Name
-      value: Bathroom Mirror
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 86c0bcf691ccb4469be687af77766abc, type: 3}
 --- !u!1001 &7301587549001906404
 PrefabInstance:
   m_ObjectHideFlags: 0
