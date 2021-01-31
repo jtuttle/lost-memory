@@ -22,6 +22,7 @@ public class PlayerRaycast : MonoBehaviour
         );
 
         RaycastHit hitInfo;
+        StoryObject target = null;
 
         bool hit = Physics.Raycast(
             this.transform.position,
@@ -30,18 +31,21 @@ public class PlayerRaycast : MonoBehaviour
             DistanceToSee
         );
 
+        if(hit)
+        {
+            target = hitInfo.collider.gameObject.GetComponent<StoryObject>();
+        }
+
         // remove outline from previous target
-        if(_target && (!hit || (_target != hitInfo.collider.gameObject)))
+        if(_target && (!hit || (_target != target)))
         {
             _target.SetOutline(false);
             _target = null;
         }
-
+        
         if(hit)
         {
-            StoryObject target = hitInfo.collider.gameObject.GetComponent<StoryObject>();
-
-            if(target)
+            if(target && target != _target)
             {
                 _target = target;
                 _target.SetOutline(true);
