@@ -22,6 +22,6 @@ public class StoryTracker : MonoBehaviour
 
     public bool IsDone()
     {
-        return _progress.Count == 9;
+        return _progress.Count == 10;
     }
 }
