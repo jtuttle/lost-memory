@@ -34,6 +34,7 @@ public class PlayerRaycast : MonoBehaviour
         if(hit)
         {
             target = hitInfo.collider.gameObject.GetComponent<StoryObject>();
+            Debug.Log(target);
         }
 
         // remove outline from previous target
